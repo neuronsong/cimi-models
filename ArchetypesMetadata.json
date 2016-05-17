@@ -1,0 +1,549 @@
+{
+  "archetypes" : [ {
+    "id" : "CIMI-CORE-ACTOR.actor.v1.0.0",
+    "rmType" : "ACTOR",
+    "name" : "Actor",
+    "path" : "archetypes/CIMI-CORE-ACTOR.actor.v1.0.0.adls",
+    "sha" : "6defd9f6714c06e68c3523d7f4439cd9b8c0cbd1",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ACTOR.organization.v1.0.0",
+    "rmType" : "ACTOR",
+    "name" : "Organization",
+    "path" : "archetypes/CIMI-CORE-ACTOR.organization.v1.0.0.adls",
+    "sha" : "e5545b64d59e4cd409d23c94fbbc4ac7b770ef32",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ACTOR.person.v2.0.0",
+    "rmType" : "ACTOR",
+    "name" : "Person",
+    "path" : "archetypes/CIMI-CORE-ACTOR.person.v2.0.0.adls",
+    "sha" : "00b669f14476b45cfec1252fc5f89450bd126d31",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.action.v1.0.0.adls",
+    "sha" : "8ff5ad077b1bc7f831505f2920f6778e137394b2",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.action_set.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Action Set",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.action_set.v1.0.0.adls",
+    "sha" : "0356ecee233c604f72d14b6a0cf1b27ca860381c",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.actor_name.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Actor name",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.actor_name.v1.0.0.adls",
+    "sha" : "8e3ffea4a5af4de26a5fd5196dfc2cc37620651f",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.address.v2.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Address",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.address.v2.0.0.adls",
+    "sha" : "d15cf3c6dc2425ffc44a28836dd313a85085b698",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.address_detailed.v2.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Address detailed",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.address_detailed.v2.0.0.adls",
+    "sha" : "f42d6f6e760cb9a16d2ff9643b9d8fd2fac95abe",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.address_line.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Address line",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.address_line.v1.0.0.adls",
+    "sha" : "e2e81ee8c224389c1bad69b8a949e1d661de1819",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.anatomical_location.v2.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Anatomical Location",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.anatomical_location.v2.0.0.adls",
+    "sha" : "bebb9ce9d7a564fc5da4baf71eb89909deb61f39",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.approve_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Approve action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.approve_action.v1.0.0.adls",
+    "sha" : "e5fab452d91790ace52144c647ea8c7789d12715",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.author_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Author action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.author_action.v1.0.0.adls",
+    "sha" : "198af66d13ea30229832719aebcc2f4a95f6de9c",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.cancel_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Cancel action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.cancel_action.v1.0.0.adls",
+    "sha" : "29d9e6ac002529828b46881232f2489687622a88",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.clinical_activity.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Clinical activity",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.clinical_activity.v1.0.0.adls",
+    "sha" : "28461db174faf3826a064a3ee2ad250bc4e65096",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.clinical_document.v2.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Clinical report",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.clinical_document.v2.0.0.adls",
+    "sha" : "a6767cabb72490d3962b3481f59e400ebd116bdb",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.clinical_report_header.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Clinical report header",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.clinical_report_header.v1.0.0.adls",
+    "sha" : "1217b246f03ce2a6c9c5bf18d0b0006199274f7a",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.clinical_statement.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Clinical Statment",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.clinical_statement.v1.0.0.adls",
+    "sha" : "e00846e0c375c19a76396208df43f4663cf0dd29",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.cluster.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Cluster",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.cluster.v1.0.0.adls",
+    "sha" : "ce58eb275adedd91807bb12895beb625f0654302",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.collect_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Collect action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.collect_action.v1.0.0.adls",
+    "sha" : "996ffab9d59e7bb3daf1c1510b09ee7bb2fcd761",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.compound_clinical_statement.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Compound clinical statement",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.compound_clinical_statement.v1.0.0.adls",
+    "sha" : "af9de48e0106c4c7a70cc819e76fbff91318e245",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.custodian_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Custodian action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.custodian_action.v1.0.0.adls",
+    "sha" : "f2958e2f00ced8d6109d7667964bd2fc2e6bb779",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.electronic_contact.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Electronic contact",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.electronic_contact.v1.0.0.adls",
+    "sha" : "ee686ef6029828b093756323c8ded96e6ed65026",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.encounter_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Encounter action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.encounter_action.v1.0.0.adls",
+    "sha" : "25c92184811be12c0d8877fc5f5c90ec6ab48914",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.heart_rate.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Heart Rate Measurement",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.heart_rate.v1.0.0.adls",
+    "sha" : "97e88beec8afa8cbe1cced544ed80a259510b30a",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.indivisible_clinical_statement.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Indivisible clinical statement",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.indivisible_clinical_statement.v1.0.0.adls",
+    "sha" : "cd49803d050f0942c46b29d6ee8b0134e8ef3110",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.interpret_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Interpret action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.interpret_action.v1.0.0.adls",
+    "sha" : "2f0715d3591a6a5056ad44c6615d0b9d3448920b",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.issue_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Issue action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.issue_action.v1.0.0.adls",
+    "sha" : "c5b8a706634a51525bf96bbe4cbca8e264234d4f",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_panel.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory panel",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_panel.v1.0.0.adls",
+    "sha" : "7b9509b77c1390cc2dc335b1457908bdc9371934",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_report_header.v3.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory report header",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_report_header.v3.0.0.adls",
+    "sha" : "5e4587652cb50a0b00e6dd1912e23671d35f6c00",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_results_report.v2.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory results report",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_results_report.v2.0.0.adls",
+    "sha" : "17dbd3b8c7a1f5b94369a192f17d88473a14cefc",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test.v1.0.0.adls",
+    "sha" : "1ee57a5be861e05c695c921faa88ec35bf92a34a",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test_document.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test document",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test_document.v1.0.0.adls",
+    "sha" : "3743285ae0fe245e1e33997759ddb2a45a93e62b",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test_narrative.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test narrative",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test_narrative.v1.0.0.adls",
+    "sha" : "a5ce949e1d49ab2801635f1b4b2b86a418da82da",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test_nominal.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test nominal",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test_nominal.v1.0.0.adls",
+    "sha" : "e9dc06a83dc42f3f7286b0501ab93a63da2a6fda",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test_ordinal.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test ordinal",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test_ordinal.v1.0.0.adls",
+    "sha" : "99cc478dfc17fcfe822674bf1bc86c63882eeba8",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test_ordqn.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test ordqn",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test_ordqn.v1.0.0.adls",
+    "sha" : "85a2b7c5007b4d91ae60948601faddb542516cf9",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test_other.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test other",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test_other.v1.0.0.adls",
+    "sha" : "9951c3d7ff8a25f425c15f805f3c8da845f9a558",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test quantitative",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test_quantitative.v1.0.0.adls",
+    "sha" : "8284125c03f30b86be8096a69caf1d90e5e9b0fc",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test_request_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test request action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test_request_action.v1.0.0.adls",
+    "sha" : "724199d7ad6a6ed0d6c396f6818d1fac9645cc41",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.laboratory_test_request_summary.v2.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Laboratory test request summary",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.laboratory_test_request_summary.v2.0.0.adls",
+    "sha" : "c736748ed067a8f11daa4576e308c29676018433",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.location.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Location",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.location.v1.0.0.adls",
+    "sha" : "690b67d9eddb3338597c18f318aa18d2352da36c",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.material_entity.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Material entity",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.material_entity.v1.0.0.adls",
+    "sha" : "bea69fcb3923179da459cfe3c2f6a2feed3f207a",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.medication_statement.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Medication Statement",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.medication_statement.v1.0.0.adls",
+    "sha" : "696bbd6362bbd5faeefc865aa011a87cee7bdc54",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.observation_action_set.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Observation action set",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.observation_action_set.v1.0.0.adls",
+    "sha" : "fe3400ddff101bf351c7ea110f17027350d31cb0",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.observation_request.v2.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Observation Request",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.observation_request.v2.0.0.adls",
+    "sha" : "058c959eb2f04c9295a8cbc3d2e9f583abc25591",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.observation_request_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Observation request action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.observation_request_action.v1.0.0.adls",
+    "sha" : "79e5b087acef5fefd103dd8643d483df14fa0994",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.observation_result.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Observation Result",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.observation_result.v1.0.0.adls",
+    "sha" : "8a9b8b42d50ca732a18fb429132200e895045292",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.observation_set.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Observation set",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.observation_set.v1.0.0.adls",
+    "sha" : "ece0dccd1ed937091edec256b886573f068a7847",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.observe_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Observe action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.observe_action.v1.0.0.adls",
+    "sha" : "de7520308315051694e65bb9785a496e3415652b",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.organization_name.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Organization name",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.organization_name.v1.0.0.adls",
+    "sha" : "8ac58b9580cebf299474eff91d12ebf042197cae",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.party_name.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Party name",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.party_name.v1.0.0.adls",
+    "sha" : "d6c85657ac03cb28de0834ca45b582a49b7f5d35",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.patient_encounter_summary.v2.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Patient encounter summary",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.patient_encounter_summary.v2.0.0.adls",
+    "sha" : "bcd0dc37e2ac3e43bac4f382385db5002d331657",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.person_name.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Person name",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.person_name.v1.0.0.adls",
+    "sha" : "b6aefda9e65454fcdc15a7ffbeee625abc1c75ad",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.person_name_detailed.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Person name detailed",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.person_name_detailed.v1.0.0.adls",
+    "sha" : "3133814c220846f274bf4987131cf903478d6585",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.receive_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Receive action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.receive_action.v1.0.0.adls",
+    "sha" : "dee86d387e59c1c210801fb57b943028e705edc4",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.reference_range.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Reference range",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.reference_range.v1.0.0.adls",
+    "sha" : "97e1b0ea7ea0d2cace46f353e882f9b4415fda75",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.report_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Report Action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.report_action.v1.0.0.adls",
+    "sha" : "7909baa5af1851429beed786687da5fdbf8a348e",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.request.v2.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Request",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.request.v2.0.0.adls",
+    "sha" : "6a5ea4770250cda51b42f546ba9978795b623d73",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.request_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Request action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.request_action.v1.0.0.adls",
+    "sha" : "e9e6e2f6d2524f5312bf10c43977e476238a59b5",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.requested_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Requested action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.requested_action.v1.0.0.adls",
+    "sha" : "de273e31c0869b8899ce4f3c373d59fe09b9878a",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.specimen.v3.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Specimen",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.specimen.v3.0.0.adls",
+    "sha" : "4dd6f55c041fccee53cd08e819def601f66e5468",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.specimen_collection_site.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Specimen collection site",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.specimen_collection_site.v1.0.0.adls",
+    "sha" : "ecb1ad484fc42f9b3cce753ebfdd30a703724d5d",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.subject_of_information.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Subject of information",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.subject_of_information.v1.0.0.adls",
+    "sha" : "f6378870dba8d70d74ec3a97a46386a35532b796",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.systolic_blood_pressure.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Systolic Blood Pressure",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.systolic_blood_pressure.v1.0.0.adls",
+    "sha" : "96623a69c2971e53da0d596d6eb47102d3329ec0",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.update_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Update action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.update_action.v1.0.0.adls",
+    "sha" : "ab4d0b5042de0758c2385f3e31a7c3a5efb3fde2",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ITEM_GROUP.verify_birthdate_action.v1.0.0",
+    "rmType" : "ITEM_GROUP",
+    "name" : "Verify birthdate action",
+    "path" : "archetypes/CIMI-CORE-ITEM_GROUP.verify_birthdate_action.v1.0.0.adls",
+    "sha" : "f48818f34b1edc0ff835b6e38b090d9d021580be",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-PARTY.party.v1.0.0",
+    "rmType" : "PARTY",
+    "name" : "Party",
+    "path" : "archetypes/CIMI-CORE-PARTY.party.v1.0.0.adls",
+    "sha" : "54f4872079057a67a6aeb6f57846bc23fda0fca1",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-PARTY_RELATIONSHIP.employer_relationship.v1.0.0",
+    "rmType" : "PARTY_RELATIONSHIP",
+    "name" : "Employer",
+    "path" : "archetypes/CIMI-CORE-PARTY_RELATIONSHIP.employer_relationship.v1.0.0.adls",
+    "sha" : "6f2a61dd49db2b5f98beac663b03ceb95c6ea02b",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-PARTY_RELATIONSHIP.healthcare_provider_relationship.v1.0.0",
+    "rmType" : "PARTY_RELATIONSHIP",
+    "name" : "Accreditation organization",
+    "path" : "archetypes/CIMI-CORE-PARTY_RELATIONSHIP.healthcare_provider_relationship.v1.0.0.adls",
+    "sha" : "abc29a1898fd3af211923861ec819f38de495451",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-PARTY_RELATIONSHIP.next_of_kin_relationship.v1.0.0",
+    "rmType" : "PARTY_RELATIONSHIP",
+    "name" : "Next of kin",
+    "path" : "archetypes/CIMI-CORE-PARTY_RELATIONSHIP.next_of_kin_relationship.v1.0.0.adls",
+    "sha" : "33b669c098b2846f5b9a523b1d99e1c6a62ff18f",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-PARTY_RELATIONSHIP.organization_relationship.v1.0.0",
+    "rmType" : "PARTY_RELATIONSHIP",
+    "name" : "Organization relationship",
+    "path" : "archetypes/CIMI-CORE-PARTY_RELATIONSHIP.organization_relationship.v1.0.0.adls",
+    "sha" : "0ada91e3ec3a27f40ea4935b1d0fb8d9b2ad7144",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-PARTY_RELATIONSHIP.party_relationship.v1.0.0",
+    "rmType" : "PARTY_RELATIONSHIP",
+    "name" : "Party relationship",
+    "path" : "archetypes/CIMI-CORE-PARTY_RELATIONSHIP.party_relationship.v1.0.0.adls",
+    "sha" : "f26e2de5fa25459562d1ca59bd58205524c4e018",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ROLE.healthcare_consumer_role.v1.0.0",
+    "rmType" : "ROLE",
+    "name" : "Healthcare consumer role",
+    "path" : "archetypes/CIMI-CORE-ROLE.healthcare_consumer_role.v1.0.0.adls",
+    "sha" : "7891322e6b4fc2e316b76c787d7ef19ad2df9988",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ROLE.healthcare_provider_individual_role.v1.0.0",
+    "rmType" : "ROLE",
+    "name" : "Healthcare provider individual role",
+    "path" : "archetypes/CIMI-CORE-ROLE.healthcare_provider_individual_role.v1.0.0.adls",
+    "sha" : "37dfd3b1e14578bb6725bf43204958a011fe9691",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ROLE.healthcare_provider_organization_role.v1.0.0",
+    "rmType" : "ROLE",
+    "name" : "Healthcare provider organization role",
+    "path" : "archetypes/CIMI-CORE-ROLE.healthcare_provider_organization_role.v1.0.0.adls",
+    "sha" : "e67b65052665844981efe494574ca081460cd570",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ROLE.healthcare_provider_role.v1.0.0",
+    "rmType" : "ROLE",
+    "name" : "Healthcare provider role",
+    "path" : "archetypes/CIMI-CORE-ROLE.healthcare_provider_role.v1.0.0.adls",
+    "sha" : "7c5b4e0098f769e97662a467be6b4451e511555d",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ROLE.person_role.v1.0.0",
+    "rmType" : "ROLE",
+    "name" : "Person role",
+    "path" : "archetypes/CIMI-CORE-ROLE.person_role.v1.0.0.adls",
+    "sha" : "6ef8a5e6890ba65ab86f23733d04ff17a5c93dd9",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "CIMI-CORE-ROLE.role.v1.0.0",
+    "rmType" : "ROLE",
+    "name" : "Role",
+    "path" : "archetypes/CIMI-CORE-ROLE.role.v1.0.0.adls",
+    "sha" : "024516b9cc616d811f77424b7d8b3bc71449b095",
+    "languages" : [ "en" ]
+  } ]
+}
