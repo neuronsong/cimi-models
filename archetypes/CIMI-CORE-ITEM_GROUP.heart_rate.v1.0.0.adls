@@ -1,0 +1,233 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+  CIMI-CORE-ITEM_GROUP.heart_rate.v1.0.0
+
+specialize
+  CIMI-CORE-ITEM_GROUP.observation_result.v1
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Patrick Langford">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"patrick@neuronsong.com">
+    ["date"] = <"10/01/2015">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for CIMI 'heart rate measurement' concept">
+      use = <"Use for heart rate measurements.">
+      keywords = <"heart rate","measurement">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>","Tom Oniki <Tom.Oniki@imail.org>","Claude Nanjo <cnanjo@cognitivemedicine.com>">
+  custodian_namespace = <"org.opencimi">
+  custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+  licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+  copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+  ip_acknowledgements = <
+    ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+    ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+  >
+
+definition
+  ITEM_GROUP[id1.1.1.1] matches { -- Heart Rate Measurement
+    /item matches {
+      ELEMENT[id5.0.4] -- Method
+      ELEMENT[id5.0.5] matches { -- Status
+        value matches {
+          CODED_TEXT[id0.0.105] matches {
+            code matches {"final","entered-in-error","unknown"} -- Observation Status Value Set
+          }
+        }
+      }
+      ELEMENT[id5.0.6] occurrences matches {0} -- Priority
+      ELEMENT[id5.0.7] occurrences matches {0} -- Interpretation Category
+      ELEMENT[id5.0.8] matches { -- Result
+        value matches {
+          CODED_TEXT[id0.0.0.100] matches {
+            code matches {"beats per minute"} -- Units
+          }
+        }
+      }
+      ELEMENT[id5.0.9] occurrences matches {0} -- Normal range
+      ELEMENT[id5.0.10] occurrences matches {0} -- Reference range
+      ELEMENT[id5.0.11] occurrences matches {0} -- Sequence
+      ELEMENT[id5.0.12] matches { -- Delta flag
+        value matches {
+          CODED_TEXT[id0.0.112] matches {
+            code matches {"U","D","B","W"} -- Observation Interpretation
+          }
+        }
+      }
+      ELEMENT[id5.0.13] occurrences matches {0} -- Signal flag
+      ELEMENT[id0.0.0.1] occurrences matches {0..1} matches { -- Body Location Precoord
+        value matches {
+          CODED_TEXT[id0.0.0.101] matches { -- Body Location value set
+            code matches {"ac0.0.0.201"}
+          }
+        }
+      }
+      ELEMENT[id0.0.0.2] occurrences matches {0..1} matches { -- Body Position
+        value matches {
+          CODED_TEXT[id0.0.0.102] matches { -- Body Position value set
+            code matches {"ac0.0.0.202"}
+          }
+        }
+      }
+      ELEMENT[id0.0.0.3] occurrences matches {0..1} matches { -- Associated Precondition
+        value matches {
+          CODED_TEXT[id0.0.0.103] matches { -- Associated Precondition value set
+            code matches {"ac0.0.0.203"}
+          }
+        }
+      }
+      ELEMENT[id0.0.0.4] occurrences matches {0..1} matches { -- Device
+        value matches {
+          CODED_TEXT[id0.0.0.104] matches { -- Device value set
+            code matches {"ac0.0.0.204"}
+          }
+        }
+      }
+    }
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1.1"] = < text = <"Heart Rate Measurement"> >
+      ["id0.0.0.100"] = < text = <"Units"> >
+      ["id0.0.0.1"] = < text = <"Body Location Precoord"> >
+      ["id0.0.0.101"] = < text = <"Body Location Precoord Value Set"> >
+      ["ac0.0.0.201"] = < text = <"Body Location Precoord Value Set"> >
+      ["id0.0.0.2"] = < text = <"Body Position"> >
+      ["id0.0.0.102"] = < text = <"Body Position Value Set"> >
+      ["ac0.0.0.202"] = < text = <"Body Position Value Set"> >
+      ["id0.0.0.3"] = < text = <"Associated Precondition"> >
+      ["id0.0.0.103"] = < text = <"Associated Precondition Value Set"> >
+      ["ac0.0.0.203"] = < text = <"Associated Precondition Value Set"> >
+      ["id0.0.0.4"] = < text = <"Device"> >
+      ["id0.0.0.104"] = < text = <"Device Value Set"> >
+      ["ac0.0.0.204"] = < text = <"Device Value Set"> >
+
+      ["at0.0.0.301"] = < text = <"Left radial artery"> >
+      ["at0.0.0.302"] = < text = <"Right radial artery"> >
+      ["at0.0.0.303"] = < text = <"Left common carotid artery"> >
+      ["at0.0.0.304"] = < text = <"Right common carotid artery"> >
+      ["at0.0.0.305"] = < text = <"Left axillary artery"> >
+      ["at0.0.0.306"] = < text = <"Right axillary artery"> >
+      ["at0.0.0.307"] = < text = <"Brachial artery"> >
+      ["at0.0.0.308"] = < text = <"Right ulnar artery"> >
+      ["at0.0.0.309"] = < text = <"Left ulnar artery"> >
+      ["at0.0.0.310"] = < text = <"Right femoral artery"> >
+      ["at0.0.0.311"] = < text = <"Left femoral artery"> >
+      ["at0.0.0.312"] = < text = <"Right popliteal artery"> >
+      ["at0.0.0.313"] = < text = <"Left popliteal artery"> >
+      ["at0.0.0.314"] = < text = <"Dorsalis pedis artery"> >
+      ["at0.0.0.315"] = < text = <"Right posterior tibial artery"> >
+      ["at0.0.0.316"] = < text = <"Left posterior tibial artery"> >
+      ["at0.0.0.317"] = < text = <"Facial artery"> >
+      ["at0.0.0.318"] = < text = <"Superficial temporal artery"> >
+      ["at0.0.0.319"] = < text = <"Apex of heart"> >
+
+      ["at0.0.0.320"] = < text = <"Supine Body Position"> >
+      ["at0.0.0.321"] = < text = <"Sitting Position"> >
+      ["at0.0.0.322"] = < text = <"Orthostatic Body Position"> >
+
+      ["at0.0.0.323"] = < text = <"After Exercise"> >
+      ["at0.0.0.324"] = < text = <"Antepartum"> >
+      ["at0.0.0.325"] = < text = <"At Rest"> >
+      ["at0.0.0.326"] = < text = <"Before Exercise"> >
+      ["at0.0.0.327"] = < text = <"During Exercise"> >
+      ["at0.0.0.328"] = < text = <"Post-dose"> >
+      ["at0.0.0.329"] = < text = <"Pre-dose"> >
+      ["at0.0.0.330"] = < text = <"Preoperative"> >
+      ["at0.0.0.331"] = < text = <"Postpartum"> >
+      ["at0.0.0.332"] = < text = <"Postoperative"> >
+      ["at0.0.0.333"] = < text = <"Intraoperative"> >
+      ["at0.0.0.334"] = < text = <"Intrapartum"> >
+
+      ["at0.0.0.335"] = < text = <"Arterial Line"> >
+      ["at0.0.0.336"] = < text = <"Cardiovascular Monitor"> >
+      ["at0.0.0.337"] = < text = <"Stethoscope"> >
+      
+    >
+  >
+  term_bindings = <
+    ["snomed-ct"] = <
+      items = <
+        ["id5.0.2"] = <http://loinc.org/id/8867-4> -- Heart Rate
+        ["id5.0.4"] = <http://snomed.info/id/246501002> -- Technique
+        ["id5.0.5"] = <http://snomed.info/id/263490005> -- Status
+        ["id0.0.0.100"] = <http://snomed.info/id/258983007> -- beats per minute
+
+        ["id0.0.0.1"] = <http://snomed.info/id/704327008> -- Direct Site
+        ["at0.0.0.301"] = <http://snomed.info/id/368504007> -- Left radial artery
+        ["at0.0.0.302"] = <http://snomed.info/id/368503001> -- Right radial artery
+        ["at0.0.0.303"] = <http://snomed.info/id/113263003> -- Left common carotid artery
+        ["at0.0.0.304"] = <http://snomed.info/id/65355003> -- Right common carotid artery
+        ["at0.0.0.305"] = <http://snomed.info/id/368502006> -- Left axillary artery
+        ["at0.0.0.306"] = <http://snomed.info/id/368501004> -- Right axillary artery
+        ["at0.0.0.307"] = <http://snomed.info/id/181322008> -- Brachial artery
+        ["at0.0.0.308"] = <http://snomed.info/id/368505008> -- Right ulnar artery
+        ["at0.0.0.309"] = <http://snomed.info/id/368506009> -- Left ulnar artery
+        ["at0.0.0.310"] = <http://snomed.info/id/69833005> -- Right femoral artery
+        ["at0.0.0.311"] = <http://snomed.info/id/113270003> -- Left femoral artery
+        ["at0.0.0.312"] = <http://snomed.info/id/57832007> -- Right popliteal artery
+        ["at0.0.0.313"] = <http://snomed.info/id/25885001> -- Left popliteal artery
+        ["at0.0.0.314"] = <http://snomed.info/id/86547008> -- Dorsalis pedis artery
+        ["at0.0.0.315"] = <http://snomed.info/id/214811007> -- Right posterior tibial artery
+        ["at0.0.0.316"] = <http://snomed.info/id/214912001> -- Left posterior tibial artery
+        ["at0.0.0.317"] = <http://snomed.info/id/23074001> -- Facial artery
+        ["at0.0.0.318"] = <http://snomed.info/id/15672000> -- Superficial temporal artery
+        ["at0.0.0.319"] = <http://snomed.info/id/13383001> -- Apex of heart
+
+        ["id0.0.0.2"] = <http://snomed.info/id/397155001> -- Body Position
+        ["at0.0.0.320"] = <http://snomed.info/id/40199007> -- Supine Body Position
+        ["at0.0.0.321"] = <http://snomed.info/id/33586001> -- Sitting Position
+        ["at0.0.0.322"] = <http://snomed.info/id/10904000> -- Orthostatic Body Position
+
+        ["id0.0.0.3"] = <http://snomed.info/id/704326004> -- Precondition
+        ["at0.0.0.323"] = <http://snomed.info/id/255214003> -- After Exercise
+        ["at0.0.0.324"] = <http://snomed.info/id/276986009> -- Antepartum
+        ["at0.0.0.325"] = <http://snomed.info/id/263678003> -- At Rest
+        ["at0.0.0.326"] = <http://snomed.info/id/307166007> -- Before Exercise
+        ["at0.0.0.327"] = <http://snomed.info/id/309604004> -- During Exercise
+        ["at0.0.0.328"] = <http://snomed.info/id/255566006> -- Post-dose
+        ["at0.0.0.329"] = <http://snomed.info/id/255235001> -- Pre-dose
+        ["at0.0.0.330"] = <http://snomed.info/id/262068006> -- Preoperative
+        ["at0.0.0.331"] = <http://snomed.info/id/255410009> -- Postpartum
+        ["at0.0.0.332"] = <http://snomed.info/id/262061000> -- Postoperative
+        ["at0.0.0.333"] = <http://snomed.info/id/277671009> -- Intraoperative
+        ["at0.0.0.334"] = <http://snomed.info/id/307159006> -- Intrapartum
+
+        ["id0.0.0.4"] = <http://snomed.info/id/424226004> -- Using Device
+        ["at0.0.0.335"] = <http://snomed.info/id/261241001> -- Arterial Line
+        ["at0.0.0.336"] = <http://snomed.info/id/702527008> -- Cardiovascular Monitor
+        ["at0.0.0.337"] = <http://snomed.info/id/53639001> -- Stethoscope
+        
+
+      >
+    >
+  >
+  value_sets = <
+    ["ac0.0.0.201"] = <
+      id = <"ac0.0.0.201">
+      members = <"at0.0.0.301","at0.0.0.302","at0.0.0.303","at0.0.0.304","at0.0.0.305","at0.0.0.306","at0.0.0.307","at0.0.0.308","at0.0.0.309","at0.0.0.310","at0.0.0.311","at0.0.0.312","at0.0.0.313","at0.0.0.314","at0.0.0.315","at0.0.0.316","at0.0.0.317","at0.0.0.318","at0.0.0.319">
+    >
+    ["ac0.0.0.202"] = <
+      id = <"ac0.0.0.202">
+      members = <"at0.0.0.320","at0.0.0.321","at0.0.0.322">
+    >
+    ["ac0.0.0.203"] = <
+      id = <"ac0.0.0.203">
+      members = <"at0.0.0.323","at0.0.0.324","at0.0.0.325","at0.0.0.326","at0.0.0.327","at0.0.0.328","at0.0.0.329","at0.0.0.330","at0.0.0.331","at0.0.0.332","at0.0.0.333","at0.0.0.334">
+    >
+    ["ac0.0.0.204"] = <
+      id = <"ac0.0.0.204">
+      members = <"at0.0.0.335","at0.0.0.336","at0.0.0.337">
+    >
+  >

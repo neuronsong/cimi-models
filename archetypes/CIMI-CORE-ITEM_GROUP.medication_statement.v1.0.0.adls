@@ -1,0 +1,225 @@
+archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
+  CIMI-CORE-ITEM_GROUP.medication_statement.v1.0.0
+
+specialize
+  CIMI-CORE-ITEM_GROUP.indivisible_clinical_statement.v1
+
+language
+  original_language = <[ISO_639-1::en]>
+
+description
+  original_author = <
+    ["name"] = <"Joey Coyle">
+    ["organisation"] = <"Intermountain Healthcare">
+    ["email"] = <"joey@xcoyle.com">
+    ["date"] = <"1/10/2016">
+  >
+  details = <
+    ["en"] = <
+      language = <[ISO_639-1::en]>
+      purpose = <"Archetype for SHARP Project MedicationStatement">
+      use = <"Medication Statement is used to record any drugs or medications an individual may have taken recently. 
+It may or may not have accurate dose amounts, dose timing, dose forms, or number of doses. ">
+      keywords = <"medication">
+    >
+  >
+  lifecycle_state = <"unmanaged">
+  other_contributors = <"Linda Bird <lbi@ihtsdo.org>","Joey Coyle <joey@xcoyle.com>","Stan Huff <Stan.Huff@imail.org>","Harold Solbrig <Solbrig.Harold@mayo.edu>","Thomas Beale <thomas.beale@oceaninformatics.com>">
+  custodian_namespace = <"org.opencimi">
+  custodian_organisation = <"Clinical Information Modeling Initiative <http://opencimi.org>">
+  licence = <"Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>">
+  copyright = <"Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>">
+  ip_acknowledgements = <
+    ["loinc"] = <"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use">
+    ["snomed"] = <"This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee.">
+  >
+
+definition
+  ITEM_GROUP[id1.1.1] matches {-- Medication Statement
+    item matches {
+      ELEMENT[id5.0.1] occurrences matches {1} matches {  -- Drug 
+        value existence matches {1} matches {
+          CODED_TEXT[id0.0.101]   -- from Drug valueset 
+        }
+        null_flavor existence matches {0}
+      }
+      ELEMENT[id5.0.2] occurrences matches {0..1} matches { -- Status
+        value matches {
+          CODED_TEXT[id0.0.102]   -- from Status Valueset
+        }       
+      }
+      ELEMENT[id5.0.3] matches { -- Taken Dose Lower Limit
+        value matches {
+          QUANTITY[id0.0.103]
+        }
+      }
+      ELEMENT[id5.0.4] matches { -- Taken Dose Upper Limit
+        value matches {
+          QUANTITY[id0.0.104]
+        }
+      }
+      ELEMENT[id5.0.5] occurrences matches {0..1} matches { -- Duration
+        value matches {
+          DURATION[id0.0.105]
+        }
+      }
+      ELEMENT[id5.0.6] occurrences matches {0..1} matches { -- Start Time
+        value matches {
+          DATE_TIME[id0.0.106]
+        }
+      }
+      ELEMENT[id5.0.7] occurrences matches {0..1} matches { -- End Time
+        value matches {
+          DATE_TIME[id0.0.107]
+        }
+      }
+      use_archetype ITEM_GROUP [id4.0.1, CIMI-CORE-ITEM_GROUP.date_time_inexact.v1] occurrences matches {0..1} -- Start Time Inexact
+      use_archetype ITEM_GROUP [id4.0.2, CIMI-CORE-ITEM_GROUP.date_time_inexact.v1] occurrences matches {0..1} -- End Time Inexact
+
+      
+      ELEMENT[id5.0.8] occurrences matches {0..1} matches { -- Dose Form
+        value matches {
+          CODED_TEXT[id0.0.108]   -- from Dose Form Valueset
+        }
+      }
+      ELEMENT[id5.0.9] occurrences matches {0..1} matches { -- Coded Frequency
+        value matches {
+          CODED_TEXT[id0.0.109]   -- from Coded Frequency Valueset
+        }
+      }
+      ELEMENT[id5.0.10] occurrences matches {0..1} matches { -- Route Method Device
+        value matches {
+          CODED_TEXT[id0.0.110]   -- from Route Method Device Valueset
+        }
+      }
+      use_archetype ITEM_GROUP [id4.0.3, CIMI-CORE-ITEM_GROUP.ingredient_strength.v1] occurrences matches {0..1} -- Ingredient Strength 
+
+      ELEMENT[id5.0.11] occurrences matches {0..1} matches { -- Minimum Dose Per Administration
+        value matches {
+          QUANTITY[id0.0.111]   
+        }
+      }
+      ELEMENT[id5.0.12] occurrences matches {0..1} matches { -- Maximum Dose Per Administration
+        value matches {
+          QUANTITY[id0.0.112]   
+        }
+      }
+      ELEMENT[id5.0.13] occurrences matches {0..1} matches { -- Average Daily Dose
+        value matches {
+          QUANTITY[id0.0.113]   
+        }
+      }
+      ELEMENT[id5.0.14] occurrences matches {0..1} matches { -- Clinical Drug
+        value matches {
+          CODED_TEXT[id0.0.114]   -- from Clinical Drug Valueset
+        }
+      }
+      use_archetype ITEM_GROUP [id4.0.4, CIMI-CORE-ITEM_GROUP.active_ingredient.v1] occurrences matches {0..*} -- Active Ingredient  
+
+      ELEMENT[id5.0.15] occurrences matches {0..*} matches { -- Label Instruction    
+        value matches {
+          CODED_TEXT[id0.0.115]   -- from Label Instruction Valueset
+        }
+      }
+      ELEMENT[id5.0.16] occurrences matches {0..1} matches { -- Aggregate    
+        value matches {
+          PLAIN_TEXT[id0.0.116] 
+        }
+      }
+      ELEMENT[id5.0.17] occurrences matches {0..1} matches { -- Rate    
+        value matches {
+          QUANTITY[id0.0.117] 
+        }
+      }
+      ELEMENT[id5.0.18] occurrences matches {0..1} matches { -- Drug Vehicle
+        value matches {
+          CODED_TEXT[id0.0.118]   -- from Drug VehicleValueset
+        }
+      }
+      ELEMENT[id5.0.19] occurrences matches {0..1} matches { -- Negation
+        value matches {
+          CODED_TEXT[id0.0.119]   -- from Negation Valueset
+        }
+      }
+      ELEMENT[id5.0.20] occurrences matches {0..1} matches { -- Uncertainty
+        value matches {
+          CODED_TEXT[id0.0.120]   -- from Uncertainty Valueset
+        }
+      }
+      ELEMENT[id5.0.21] occurrences matches {0..1} matches { -- Patient Identifier
+        value matches {
+          IDENTIFIER[id0.0.121]   -- from Patient Identifier
+        }
+      }
+      ELEMENT[id5.0.22] occurrences matches {0..1} matches { -- External Identifier
+        value matches {
+          IDENTIFIER[id0.0.122]   -- from External Identifier
+        }
+      }
+      ELEMENT[id5.0.23] occurrences matches {0..1} matches { -- Route
+        value matches {
+          CODED_TEXT[id0.0.123]   -- from Route Valueset
+        }
+      }
+      ELEMENT[id5.0.24] occurrences matches {0..1} matches { -- Method
+        value matches {
+          CODED_TEXT[id0.0.124]   -- from Method Valueset
+        }
+      }
+      ELEMENT[id5.0.25] occurrences matches {0..1} matches { -- Device
+        value matches {
+          CODED_TEXT[id0.0.125]   -- from Device Valueset
+        }
+      }
+      use_archetype ITEM_GROUP [id4.0.5, CIMI-CORE-ITEM_GROUP.body_location.v1] occurrences matches {0..1} -- Body Location
+
+    }
+  }
+
+terminology
+  term_definitions = <
+    ["en"] = <
+      ["id1.1.1"] = < text = <"Medication Statement"> >
+
+      ["id5.0.1"] = < text = <"Drug"> >
+      ["id5.0.2"] = < text = <"Status"> >
+      ["id5.0.3"] = < text = <"Taken Dose Lower Limit"> >
+      ["id5.0.4"] = < text = <"Taken Dose Upper Limit"> >
+      ["id5.0.5"] = < text = <"Duration"> >
+      ["id5.0.6"] = < text = <"Start Time"> >
+      ["id5.0.7"] = < text = <"End Time"> >
+      ["id5.0.8"] = < text = <"Dose Form"> >
+      ["id5.0.9"] = < text = <"Coded Frequency"> >
+      ["id5.0.10"] = < text = <"Route Method Device"> >
+      ["id5.0.11"] = < text = <"Minimum Dose Per Administration"> >
+      ["id5.0.12"] = < text = <"Maximum Dose Per Administration"> >
+      ["id5.0.13"] = < text = <"Average Daily Dose"> >
+      ["id5.0.14"] = < text = <"Clinical Drug"> >
+      ["id5.0.15"] = < text = <"Label Instruction"> >
+      ["id5.0.16"] = < text = <"Aggregate"> >
+      ["id5.0.17"] = < text = <"Rate"> >
+      ["id5.0.18"] = < text = <"Drug Vehicle"> >
+      ["id5.0.19"] = < text = <"Negation"> >
+      ["id5.0.20"] = < text = <"Uncertainty"> >
+      ["id5.0.21"] = < text = <"Patient Identifier"> >
+      ["id5.0.22"] = < text = <"External Identifier"> >
+      ["id5.0.23"] = < text = <"Route"> >
+      ["id5.0.24"] = < text = <"Method"> >
+      ["id5.0.25"] = < text = <"Device"> >
+
+
+      ["id4.0.1"] = < text = <"Start Time Inexact"> >
+      ["id4.0.2"] = < text = <"End Time Inexact"> >
+      ["id4.0.3"] = < text = <"Ingredient Strength"> >
+      ["id4.0.4"] = < text = <"Active Ingredient"> >
+      ["id4.0.5"] = < text = <"Body Location"> >
+
+    >
+  >
+  term_bindings = <
+    ["snomed-ct"] = <
+      items = <
+     
+      >
+    >
+  >
