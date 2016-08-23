@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-  CIMI-CORE-ACTOR.person.v2.0.0
+  CIMI-CORE-ACTOR.person.v2
 
 specialize
   CIMI-CORE-ACTOR.actor.v1

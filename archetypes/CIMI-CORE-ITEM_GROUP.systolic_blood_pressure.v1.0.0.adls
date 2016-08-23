@@ -1,5 +1,5 @@
 archetype (adl_version=1.5.1; rm_release=2.0.2; generated)
-  CIMI-CORE-ITEM_GROUP.systolic_blood_pressure.v1.0.0
+  CIMI-CORE-ITEM_GROUP.systolic_blood_pressure.v1
 
 specialize
   CIMI-CORE-ITEM_GROUP.observation_result.v1
